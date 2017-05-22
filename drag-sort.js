@@ -1,3 +1,15 @@
+/**
+ * @fileView 基于jQuery的简单拖动排序插件
+ *
+ * @param {Object} options
+ *        {String} targetEle 可选，排序元素的DOM选择器字符串，默认li
+ *        {object} replaceStyle 可选， 拖动时，占位元素的样式
+ *        {object} dragStyle 可选， 拖动时，被拖动元素的样式
+ * 
+ * @example $('#wrap').dragSort();
+ *
+ * @author 阿伦<https://github.com/ylb1992/drag-sort>
+ **/
 (function($) {
     'use strict';
     $.fn.dragSort = function(options) {
