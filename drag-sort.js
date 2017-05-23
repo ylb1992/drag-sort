@@ -26,6 +26,12 @@
         }, options);
 
         return this.each(function() {
+            
+            // 由于有些浏览器的图片和链接是默认可以拖动的，所以屏蔽掉document的dragstart事件 
+            document.ondragstart = function() {
+                return false;
+            }
+
             var thisEle = $(this);
             thisEle.on('mousedown.dragSort', settings.targetEle, function(event) {
 
@@ -82,9 +88,11 @@
                     });
 
 
-                    if (prevEle.length > 0 && moveTop + scrollTop < prevEle.offset().top + prevEle.outerHeight() / 2) { // 向上排序
+                    // 向上排序
+                    if (prevEle.length > 0 && moveTop + scrollTop < prevEle.offset().top + prevEle.outerHeight() / 2) { 
                         replaceEle.after(prevEle);
-                    } else if (nextEle.length > 0 && moveTop + scrollTop > nextEle.offset().top - nextEle.outerHeight() / 2) { //向下排序
+                    //向下排序
+                    } else if (nextEle.length > 0 && moveTop + scrollTop > nextEle.offset().top - nextEle.outerHeight() / 2) { 
                         replaceEle.before(nextEle);
                     }
                 });
