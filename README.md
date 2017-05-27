@@ -26,7 +26,7 @@
 $('#wrap').dragSort();
 ```
 
-## 作为模块使用（已Seajs模块为例）
+## 作为模块使用（以Seajs模块为例）drag-sort-module.js
 1. html结构同上
 2. 导入drag-sort模块
 
