@@ -13,7 +13,7 @@
  *	      targetEle: '.li'
  *	  });
  *
- * @author 阿伦<yanglunbin@cct.cn>
+ * @author 阿伦<https://github.com/ylb1992/drag-sort>
  */
 
 define(function(require) {
