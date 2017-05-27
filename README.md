@@ -31,7 +31,7 @@ $('#wrap').dragSort();
 2. 导入drag-sort模块
 
 ```
-var DragSort = require('drag-sort');
+var DragSort = require('drag-sort-module');
 ```
 3. 初始化drag-sort
 
