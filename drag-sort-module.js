@@ -8,7 +8,7 @@
  * @return Class
  *
  * @example
- *    var DragSort = require('./ui/confirm');
+ *    var DragSort = require('./ui/drag-sort');
  *    DragSort($('#picList'), {
  *	      targetEle: '.li'
  *	  });

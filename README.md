@@ -4,6 +4,7 @@
 
 # Usage
 
+## 作为jQuery plugin 使用
 1. html结构
 ```
 <ul id="wrap">
@@ -23,6 +24,21 @@
 
 ```
 $('#wrap').dragSort();
+```
+
+## 作为模块使用（已Seajs模块为例）
+1. html结构同上
+2. 导入drag-sort模块
+
+```
+var DragSort = require('drag-sort');
+```
+3. 初始化drag-sort
+
+```
+DragSort($('#wrap'), {
+    targetEle: 'li'
+});
 ```
 
 # API
