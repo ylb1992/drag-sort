@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>拖动排序</title>
+		<style>
+			* {box-sizing: border-box;}
+			.wrap { width: 520px; margin: 100px auto; padding: 0 10px 10px; border: 1px solid #ddd; list-style: none;}
+			.wrap li { height: 94px; width: 500px; padding: 10px; background: #f9f9f9; line-height: 50px; margin-top: 10px; cursor: pointer;}
+			.wrap li img { height: 100%; margin-right: 20px; vertical-align: middle;}
+		</style>
+	</head>
+	<body>
+		<ul id="wrap" class="wrap">
+			<li>
+				<img src="images/1.jpeg">
+				<span>昔我往矣,杨柳依依；今我来思,雨雪霏霏。</span>
+			</li>
+			<li>
+				<img src="images/2.jpeg">
+				<span>知我者，谓我心忧，不知我者，谓我何求。</span>
+			</li>
+			<li>
+				<img src="images/3.jpeg">
+				<span>风雨如晦，鸡鸣不已，既见君子，云胡不喜?</span>
+			</li>
+			<li>
+				<img src="images/4.jpeg">
+				<span>皎皎白驹，在彼空谷，生刍一束，其人如玉。</span>
+			</li>
+			<li>
+				<img src="images/5.jpeg">
+				<span>心之忧矣，如匪浣衣，静言思之，不能奋飞。</span>
+			</li>
+		</ul>
+		<script src="http://code.jquery.com/jquery-2.1.0.min.js" type="text/javascript"></script>
+		<script src="../drag-sort.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$('#wrap').dragSort();
+		</script>
+	</body>
+</html>
